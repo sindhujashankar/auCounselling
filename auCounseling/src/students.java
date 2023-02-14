@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
  public class students {
-   private static void main(String[] args) {
-         int i, noOfStudent, regNo = 1, physicsMark, chemistryMark, mathsMark, j, temp;
+     colleges colleges=new colleges();
+     public  static void main(String[] args) {
+
+         int i, noOfStudent, regNo, physicsMark, chemistryMark, mathsMark, j, temp;
          System.out.print("Enter the no of student: ");
          Scanner input = new Scanner(System.in);
          noOfStudent = input.nextInt();
@@ -43,7 +45,7 @@ import java.util.Scanner;
                      cutOff[j] = temp;
                  }
              }
-             System.out.println("Cutoff: " + cutOff[i]  + regNo);
+             System.out.println("Cutoff: " + cutOff[i]);
          }
      }
     }
